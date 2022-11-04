@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+body {
+    background-color: var(--background-color);
+    height: 100vh;
+    font-family: 'Manrope', sans-serif;
+}
+
+.container {
+    display : flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 325px;
+    width: 550px;
+    background-color: var(--advice-card-color);
+    border-radius: 10px;
+    text-align: center;
+    padding: 40px;
+    position: relative;
+}
+
+.contador-de-conselhos {
+    color: var(--advice-dice-color);
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.conselho {
+    font-size: 28px;
+    color: var(--text-color);
+}
+
+.divisor {
+    margin-bottom: 20px;
+}
+
+
+.borda-dado{
+    background-color: var(--advice-dice-color);
+    display: flex;
+    position: absolute;
+    height: 55px;
+    width: 55px;
+    top: 297px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.borda-dado:hover {
+    cursor: pointer;
+}
+
+.borda-dado:active {
+    box-shadow: 0 0 20px hsl(150, 100%, 66%);
+}
+
+@media (max-width: 425px) { 
+    .cartao {
+        width: 330px;
+        padding: 40px 20px;
+    }
+
+    .divisor {
+        margin-bottom: 20px;
+    }
+
+    .conselho {
+        font-size: 23px;
+    }
+}
